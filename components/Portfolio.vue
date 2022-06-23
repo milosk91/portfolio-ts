@@ -1,6 +1,5 @@
 <template>
   <div class="app">
-    <HomePagePortfolio />
     <AboutPagePortfolio />
     <div>
       <el-button class="button" plain @click="goToHome()">
