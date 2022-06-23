@@ -55,14 +55,12 @@ export default class NavBarPortfolio extends Vue {
   justify-content: center;
   font-family: 'Roboto', sans-serif;
 }
-.el-menu {
-  /* background: #f6f6f6; */
+.el-menu :hover {
 }
 .el-menu-item {
-  /* border: 1px solid#f6f6f6; */
-  /* border-radius: 4px; */
-  margin-right: 15px;
   font-size: 1rem;
+}
+.el-menu-item :hover {
 }
 .el-menu--horizontal .el-menu-item:not(.is-disabled):focus,
 .el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
@@ -90,8 +88,5 @@ export default class NavBarPortfolio extends Vue {
   left: 0px;
   border: none;
   /* background: #f6f6f6; */
-}
-.button :hover {
-  background: #fff;
 }
 </style>

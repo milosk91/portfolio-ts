@@ -1,27 +1,41 @@
 <template>
   <div>
     <NavBarPortfolio />
-    <div class="block">
-      <span class="demonstration">My Projects</span>
-      <el-carousel>
-        <el-carousel-item v-for="item in 3" :key="item">
-          test
-        </el-carousel-item>
-      </el-carousel>
-    </div>
-
-    <!-- <div class="left">
-        <div class="square">
-          <span></span>
-          <span></span>
-          <span></span>
-          <div class="content">
-            <h2>test</h2>
-            <p>test</p>
-          </div>
+    <div class="container">
+      <div class="left">
+        <a
+          href="https://xd.adobe.com/view/35270ab6-97d6-4722-975d-cbceb7282a35-6074/"
+          target="_blank"
+        >
+          <img src="../static/apartmants.png" class="img" />
+        </a>
+        <div class="content">
+          <h2>Apartments App</h2>
+          <p>Web Design</p>
         </div>
       </div>
-    </div> -->
+      <div class="content">
+        <a
+          href="https://www.figma.com/proto/lONAJpf25uSjStZIo2KVi6/Career-Change-Hi-Fi-Prototype?page-id=0%3A1&node-id=1%3A2&viewport=530%2C321%2C0.31&scaling=min-zoom&starting-point-node-id=1%3A428"
+          target="_blank"
+        >
+          <img src="../static/change-career.png" class="img-mobile" />
+        </a>
+        <h2>Change Career App</h2>
+        <p>Web Design</p>
+      </div>
+    </div>
+    <div class="content">
+      <a
+        href="https://www.figma.com/proto/qOgZrXUisL8sFTwacG7xU1/SteakHouse-Table-Reservation?page-id=0%3A1&node-id=113%3A96&viewport=427%2C65%2C0.09&scaling=scale-down&starting-point-node-id=113%3A215&show-proto-sidebar=1"
+        target="_blank"
+      >
+        <img src="../static/steakhouse.png" class="img-mobile steakhouse" />
+      </a>
+
+      <h2>SteakHouse Book A Table App</h2>
+      <p>Web Design</p>
+    </div>
   </div>
 </template>
 
@@ -46,34 +60,12 @@ export default class ProjectsPortfolio extends Vue {
 </script>
 
 <style scoped>
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background: #f6f6f6; */
-}
-.block {
-  /* height: 600px; */
-}
-
-.el-carousel__item h3 {
-  color: #475669;
-  font-size: 14px;
-  opacity: 0.75;
-  line-height: 150px;
-  margin: 0;
-}
-
-.el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
-}
-
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
-}
 .container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 5rem;
 }
 
 .square {
@@ -87,8 +79,6 @@ body {
 
 .square span:nth-child(1) {
   position: absolute;
-  top: 150px;
-  left: 150px;
   width: 100%;
   height: 100%;
   border: 2px solid rosybrown;
@@ -104,8 +94,6 @@ body {
 
 .square span:nth-child(2) {
   position: absolute;
-  top: 150px;
-  left: 150px;
   width: 100%;
   height: 100%;
   border: 2px solid #ecb;
@@ -114,15 +102,8 @@ body {
   animation: animate2 4s linear infinite;
 }
 
-/* .square:hover span:nth-child(2) {
-  border: none;
-  background: #ecb;
-} */
-
 .square span:nth-child(3) {
   position: absolute;
-  top: 150px;
-  left: 150px;
   width: 100%;
   height: 100%;
   border: 2px solid #ecc;
@@ -130,11 +111,6 @@ body {
   transition: 0.5s;
   animation: animate 10s linear infinite;
 }
-
-/* .square:hover span:nth-child(3) {
-  background: #ecc;
-  border: none;
-} */
 
 @keyframes animate {
   0% {
@@ -158,24 +134,13 @@ body {
 
 .content {
   position: relative;
-  top: 150px;
-  left: 150px;
-  padding: 40px 60px;
   color: rosybrown;
   text-align: center;
   transition: 0.5s;
   font-size: 16px;
-  border: none;
-  background: transparent;
   display: flex;
   flex-direction: column;
-}
-.right {
-  width: 50%;
-  height: 100%;
-}
-
-.left {
+  font-family: 'Roboto', sans-serif;
 }
 
 .img {
@@ -183,11 +148,36 @@ body {
   height: 500px;
   border: 1px solid #ececec;
   border-radius: 38% 63% 63% 37% / 41% 44% 56% 59%;
+  opacity: 1;
+  transition: transform 0.7s;
 }
-.image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 150px;
+.img-mobile {
+  width: 250px;
+  height: 600px;
+  border: 1px solid #ececec;
+  border-radius: 63% 38% 36% 72% / 31% 54% 36% 49%;
+  opacity: 1;
+  transition: transform 0.7s;
+}
+.img:hover {
+  opacity: 0.6;
+  transform: scale(1.05);
+}
+.img-mobile:hover {
+  opacity: 0.6;
+  transform: scale(1.05);
+}
+.steakhouse {
+  border-radius: 33% 58% 76% 42% / 11% 14% 36% 39%;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  font-weight: 300;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
 }
 </style>

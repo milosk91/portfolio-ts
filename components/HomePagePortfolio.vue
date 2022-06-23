@@ -3,7 +3,7 @@
     <NavBarPortfolio />
     <div class="container">
       <div class="image">
-        <img src="/ja.png" class="img" alt="" />
+        <img src="/ja.png" class="img" alt="person" />
       </div>
 
       <div class="square">
@@ -13,7 +13,8 @@
         <div class="content">
           <h2>Hey there!</h2>
           <p>
-            I’m a creative and passionate web designer based in Oslo, Norway.
+            My name is Milos. I’m a creative and passionate Front-End Developer
+            and Web Designer based in Oslo, Norway.
           </p>
         </div>
       </div>
@@ -55,11 +56,11 @@ body {
 }
 p {
   font-size: 2rem;
-  margin-top: 1rem;
+  margin-top: 0.25rem;
   font-weight: 300;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
@@ -114,11 +115,6 @@ h2 {
   animation: animate 10s linear infinite;
 }
 
-/* .square:hover span:nth-child(3) {
-  background: #ecc;
-  border: none;
-} */
-
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -140,8 +136,6 @@ h2 {
 }
 
 .content {
-  top: 150px;
-  left: 150px;
   max-width: 400px;
   color: rosybrown;
   text-align: center;
@@ -152,9 +146,6 @@ h2 {
 .right {
   width: 50%;
   height: 100%;
-}
-
-.left {
 }
 
 .img {
