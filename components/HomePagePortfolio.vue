@@ -100,11 +100,6 @@ h2 {
   animation: animate2 4s linear infinite;
 }
 
-/* .square:hover span:nth-child(2) {
-  border: none;
-  background: #ecb;
-} */
-
 .square span:nth-child(3) {
   position: absolute;
   width: 100%;

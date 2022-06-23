@@ -11,14 +11,10 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-import NavBarPortfolio from './NavBarPortfolio.vue'
-import HomePagePortfolio from './HomePagePortfolio.vue'
 import AboutPagePortfolio from './AboutPagePortfolio.vue'
 
 @Component({
   components: {
-    NavBarPortfolio,
-    HomePagePortfolio,
     AboutPagePortfolio,
   },
 })

@@ -81,6 +81,5 @@ export default class NavBarPortfolio extends Vue {
   top: 0px;
   left: 0px;
   border: none;
-  /* background: #f6f6f6; */
 }
 </style>
