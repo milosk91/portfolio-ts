@@ -1,19 +1,19 @@
 <template>
   <div id="app" class="container">
-    <Portfolio />
+    <HomePagePortfolio />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import Router from 'vue-router'
-import Portfolio from '~/components/Portfolio.vue'
+import HomePagePortfolio from '../components/HomePagePortfolio.vue'
 
 Vue.use(Router)
 
 export default Vue.extend({
   components: {
-    Portfolio,
+    HomePagePortfolio,
   },
 })
 </script>

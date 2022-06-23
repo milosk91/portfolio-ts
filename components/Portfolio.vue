@@ -1,6 +1,5 @@
 <template>
   <div class="app">
-    <AboutPagePortfolio />
     <div>
       <el-button class="button" plain @click="goToHome()">
         <img src="/mk-logo-rosybrown.png" class="logo" />
@@ -11,12 +10,9 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-import AboutPagePortfolio from './AboutPagePortfolio.vue'
 
 @Component({
-  components: {
-    AboutPagePortfolio,
-  },
+  components: {},
 })
 export default class Portfolio extends Vue {
   /* Props */
