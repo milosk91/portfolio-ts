@@ -55,13 +55,7 @@ export default class NavBarPortfolio extends Vue {
   justify-content: center;
   font-family: 'Roboto', sans-serif;
 }
-.el-menu :hover {
-}
-.el-menu-item {
-  font-size: 1rem;
-}
-.el-menu-item :hover {
-}
+
 .el-menu--horizontal .el-menu-item:not(.is-disabled):focus,
 .el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
   background: #f6f6f6;
