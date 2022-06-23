@@ -12,11 +12,10 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-  },
-
-  target: 'static',
-  router: {
-    base: '/portfolio-ts/',
+    target: 'static',
+    router: {
+      base: '/portfolio-ts/',
+    },
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
