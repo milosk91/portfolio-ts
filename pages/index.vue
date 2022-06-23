@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="container">
     <HomePagePortfolio />
+    <AboutPagePortfolio />
   </div>
 </template>
 
@@ -8,12 +9,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HomePagePortfolio from '../components/HomePagePortfolio.vue'
+import AboutPagePortfolio from '../components/AboutPagePortfolio.vue'
 
 Vue.use(Router)
 
 export default Vue.extend({
   components: {
     HomePagePortfolio,
+    AboutPagePortfolio,
   },
 })
 </script>
