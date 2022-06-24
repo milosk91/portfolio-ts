@@ -3,7 +3,7 @@
     <NavBarPortfolio />
     <div class="container">
       <div class="image">
-        <img src="/ja.png" class="img" alt="person" />
+        <img src="../static/ja.png" class="img" alt="person" />
       </div>
 
       <div class="square">

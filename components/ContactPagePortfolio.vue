@@ -4,7 +4,7 @@
     <div class="container">
       <div class="right">
         <div class="image">
-          <img src="/ja.png" class="img" alt="" />
+          <img src="../static/ja.png" class="img" alt="" />
         </div>
       </div>
 

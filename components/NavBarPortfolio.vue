@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <el-button class="button" plain @click="goToHome()">
-      <img src="/mk-logo-rosybrown.png" class="logo" />
+      <img src="../static/mk-logo-rosybrown.png" class="logo" />
     </el-button>
     <el-menu mode="horizontal" @select="handleSelect">
       <el-menu-item index="1" @click="goToHome()">Home.</el-menu-item>
