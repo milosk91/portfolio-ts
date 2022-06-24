@@ -11,6 +11,7 @@
     "noEmit": true,
     "noImplicitThis": false,
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "baseUrl": ".",
     "paths": {
       "~/*": ["./*"],
